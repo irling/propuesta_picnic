@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme{
+    --color-rosa-muy-claro: #F3E0E2;
+    --color-rosa-pastel-suave: #E9C6D1;
+    --color-rosa-saturado: #DFA3B3;
+    --color-rosa-viejo: #C88E9E;
+    --color-rosa-oscuro-marsala: #A55D63;
+
+    --font-poppins: 'Poppins', 'sans-serif';
+}

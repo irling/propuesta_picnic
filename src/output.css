@@ -7,9 +7,12 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-600: oklch(57.7% 0.245 27.325);
+    --color-fuchsia-300: oklch(83.3% 0.145 321.434);
     --color-pink-50: oklch(97.1% 0.014 343.198);
     --color-white: #fff;
     --spacing: 0.25rem;
+    --container-md: 28rem;
     --font-weight-semibold: 600;
     --font-weight-extrabold: 800;
     --radius-xl: 0.75rem;
@@ -190,8 +193,8 @@
   .table {
     display: table;
   }
-  .h-20 {
-    height: calc(var(--spacing) * 20);
+  .h-15 {
+    height: calc(var(--spacing) * 15);
   }
   .h-35 {
     height: calc(var(--spacing) * 35);
@@ -199,8 +202,11 @@
   .h-auto {
     height: auto;
   }
-  .w-20 {
-    width: calc(var(--spacing) * 20);
+  .h-screen {
+    height: 100vh;
+  }
+  .w-15 {
+    width: calc(var(--spacing) * 15);
   }
   .w-96 {
     width: calc(var(--spacing) * 96);
@@ -229,6 +235,9 @@
   .justify-center {
     justify-content: center;
   }
+  .overflow-hidden {
+    overflow: hidden;
+  }
   .rounded-xl {
     border-radius: var(--radius-xl);
   }
@@ -239,6 +248,9 @@
   .border-none {
     --tw-border-style: none;
     border-style: none;
+  }
+  .border-red-600 {
+    border-color: var(--color-red-600);
   }
   .bg-pink-50 {
     background-color: var(--color-pink-50);
@@ -263,15 +275,6 @@
   }
   .text-\[20px\] {
     font-size: 20px;
-  }
-  .text-\[22px\] {
-    font-size: 22px;
-  }
-  .text-\[24px\] {
-    font-size: 24px;
-  }
-  .text-\[28px\] {
-    font-size: 28px;
   }
   .text-\[40px\] {
     font-size: 40px;

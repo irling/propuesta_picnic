@@ -8,11 +8,9 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-600: oklch(57.7% 0.245 27.325);
-    --color-fuchsia-300: oklch(83.3% 0.145 321.434);
     --color-pink-50: oklch(97.1% 0.014 343.198);
     --color-white: #fff;
     --spacing: 0.25rem;
-    --container-md: 28rem;
     --font-weight-semibold: 600;
     --font-weight-extrabold: 800;
     --radius-xl: 0.75rem;
@@ -220,6 +218,9 @@
   .resize {
     resize: both;
   }
+  .grid-rows-1 {
+    grid-template-rows: repeat(1, minmax(0, 1fr));
+  }
   .grid-rows-3 {
     grid-template-rows: repeat(3, minmax(0, 1fr));
   }
@@ -235,9 +236,6 @@
   .justify-center {
     justify-content: center;
   }
-  .overflow-hidden {
-    overflow: hidden;
-  }
   .rounded-xl {
     border-radius: var(--radius-xl);
   }
@@ -248,9 +246,6 @@
   .border-none {
     --tw-border-style: none;
     border-style: none;
-  }
-  .border-red-600 {
-    border-color: var(--color-red-600);
   }
   .bg-pink-50 {
     background-color: var(--color-pink-50);
